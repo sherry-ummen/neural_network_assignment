@@ -13,7 +13,7 @@ def parse_args(args):
     parser.add_argument('-c','--cor', dest='correlation_chart',help='Plot Correlation between Day and Avg user count',action='store_true')
     parser.add_argument('-v','--verbose',dest='verbose', help='Train model with Verbose',action='store_true')
     parser.add_argument('-p','--predict', dest='predict', help='Print the prediction',action='store_true')
-    parser.add_argument('-f','--file', dest='file', help='csv file path', default='./test_data/users_elisa.csv')
+    parser.add_argument('-f','--file', dest='file', help='csv file path', default='./test_data/users.csv')
     return parser.parse_args(args)
 
 def plot_violin(data):
